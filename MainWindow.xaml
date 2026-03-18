@@ -6,28 +6,30 @@
         Background="Transparent"
         AllowsTransparency="True"
         Height="768" Width="1580">
-    <Border Background="#161616">
+    <Border Background="#161616" CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"></ColumnDefinition>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"></RowDefinition>
-                <RowDefinition Height="100"></RowDefinition>
-                <RowDefinition Height="100"></RowDefinition>
+                <RowDefinition Height="75"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-        
-            <Border Grid.Row="1" Grid.Column="0">
-                <Button HorizontalAlignment="Stretch" Background="#161616" BorderBrush="White" BorderThickness="2"></Button>
-            </Border>
-        
+            <StackPanel Grid.Row="1">
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Core" Cursor="Hand"></RadioButton>
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Metrics" Cursor="Hand"></RadioButton>
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Performance" Cursor="Hand"></RadioButton>
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Processes" Cursor="Hand"></RadioButton>
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Overlay" Cursor="Hand"></RadioButton>
+                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Settings" Cursor="Hand"></RadioButton>
+            </StackPanel>
+
             <Border Grid.Column="1" HorizontalAlignment="Right">
-                <Button Background="Red" Width="30" Height="30" Margin="30">X</Button>
+                <Button Background="Red" Width="20" Height="20" Margin="15" Style="{StaticResource ButtonBorder}" Click="BtnClose_Button">X</Button>
             </Border>
         
-            <Border Grid.RowSpan="3" Grid.Row="1" Grid.Column="1">
+            <Border Grid.RowSpan="7" Grid.Row="1" Grid.Column="1">
                 <Grid Margin="100">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>

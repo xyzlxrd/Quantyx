@@ -5,5 +5,9 @@ namespace Quantyx {
         public MainWindow() {
             InitializeComponent();
         }
+
+        private void BtnClose_Button(object sender,RoutedEventArgs e) {
+            this.Close();
+        }
     }
 }
