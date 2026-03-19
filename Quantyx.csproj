@@ -11,11 +11,15 @@
   <ItemGroup>
     <None Remove="Assets\close.png" />
     <None Remove="Assets\minimize.png" />
+    <None Remove="Assets\quantyx.png" />
+    <None Remove="Fonts\Nexa-Heavy.ttf" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="Assets\close.png" />
     <Resource Include="Assets\minimize.png" />
+    <Resource Include="Assets\quantyx.png" />
+    <Resource Include="Fonts\Nexa-Heavy.ttf" />
   </ItemGroup>
 
 </Project>

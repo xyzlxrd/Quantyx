@@ -6,7 +6,7 @@
         Background="Transparent"
         AllowsTransparency="True"
         Height="768" Width="1580">
-    <Border Background="#161616" CornerRadius="20">
+    <Border Background="#162660" CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"></ColumnDefinition>
@@ -16,17 +16,20 @@
                 <RowDefinition Height="60"></RowDefinition>
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
-            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#161B22" CornerRadius="20,0,0,20">
+
+            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#F1E4D1" CornerRadius="20,0,0,20">
             </Border>
+            
             <Border Grid.Row="0" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="20,20,0,0" Background="Transparent">
             </Border>
+            
             <StackPanel Grid.Row="1">
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Core" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Metrics" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Performance" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Processes" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Overlay" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
-                <RadioButton Foreground="White" Height="115" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Settings" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="CORE" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="METRICS" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PERFORMANCE" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PROCESSES" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="OVERLAY" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="70" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="SETTINGS" Cursor="Hand" Style="{StaticResource RadioBtn}"></RadioButton>
             </StackPanel>
             
             <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">

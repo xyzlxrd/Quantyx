@@ -8,6 +8,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="/Themes/MainWindowTheme.xaml"/>
             </ResourceDictionary.MergedDictionaries>
+            <FontFamily x:Key="MainFont">
+                /Fonts/#Nexa Heavy
+            </FontFamily>
         </ResourceDictionary>
     </Application.Resources>
 </Application>
