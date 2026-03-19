@@ -32,9 +32,23 @@
             </Setter.Value>
         </Setter>
     </Style>
+    
+    <Style x:Key="RadioBtn" TargetType="RadioButton">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="RadioButton">
+                    <Border VerticalAlignment="Stretch">
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
     <Style x:Key="HomeButtonTheme"
-           TargetType="RadioButton">
+           TargetType="RadioButton"
+           BasedOn="{StaticResource RadioBtn}">
         <Setter Property="Background" Value="#161616"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
@@ -43,7 +57,7 @@
                     <Grid x:Name="Root"
                         VerticalAlignment="Stretch"
                         HorizontalAlignment="Stretch"
-                        Background="#161616">
+                        Background="#171717">
                         <TextBlock Text="{TemplateBinding Content}"
                                VerticalAlignment="Center"
                                Margin="30,0,0,0"/>
@@ -52,22 +66,9 @@
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="Root"
                                 Property="Background"
-                                Value="#212121"/>
+                                Value="#1C1C1C"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
-                </ControlTemplate>
-            </Setter.Value>
-        </Setter>
-    </Style>
-    <Style x:Key="RadioBtn" TargetType="RadioButton">
-        <Setter Property="Template">
-            <Setter.Value>
-                <ControlTemplate TargetType="RadioButton">
-                    <Border Background="Transparent"
-                            VerticalAlignment="Stretch">
-                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
-                                          VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
-                    </Border>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

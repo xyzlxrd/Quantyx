@@ -5,6 +5,7 @@ namespace Quantyx {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
+            CoreBtn.IsChecked = true;
         }
 
         private void BtnClose_Button(object sender, RoutedEventArgs e)
