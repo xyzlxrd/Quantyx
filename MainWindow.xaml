@@ -17,12 +17,12 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="1">
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Core" Cursor="Hand"></RadioButton>
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Metrics" Cursor="Hand"></RadioButton>
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Performance" Cursor="Hand"></RadioButton>
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Processes" Cursor="Hand"></RadioButton>
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Overlay" Cursor="Hand"></RadioButton>
-                <RadioButton Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Settings" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Core" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Metrics" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Performance" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Processes" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Overlay" Cursor="Hand"></RadioButton>
+                <RadioButton Foreground="White" Height="75" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="Settings" Cursor="Hand"></RadioButton>
             </StackPanel>
 
             <Border Grid.Column="1" HorizontalAlignment="Right">
