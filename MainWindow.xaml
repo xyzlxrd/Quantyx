@@ -30,8 +30,12 @@
             </StackPanel>
             
             <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button Width="20" Height="20" Margin="0,17.5,0,15" Style="{StaticResource ButtonMinimize}" Click="BtnMinimize_Button">-</Button>
-                <Button Width="20" Height="20" Margin="10,17.5,20,15" Style="{StaticResource ButtonBorder}" Click="BtnClose_Button">X</Button>
+                <Button Width="20" Height="20" Margin="0,17.5,0,15" Style="{StaticResource ButtonMinimize}" Click="BtnMinimize_Button">
+                    <Image Source= "/Assets/minimize.png"/>
+                </Button>
+                <Button Width="15" Height="15" Margin="3,17.5,20,15" Style="{StaticResource ButtonBorder}" Click="BtnClose_Button">
+                    <Image Source= "/Assets/close.png"/>
+                </Button>
             </StackPanel>
 
                 <Border Grid.Row="1" Grid.Column="1">

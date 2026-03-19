@@ -8,7 +8,7 @@
                 <ControlTemplate TargetType="Button">
                     <Border x:Name="border"
                             CornerRadius="15"
-                            Background="#164688">
+                            Background="Transparent">
                         <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center"/>
                     </Border>
@@ -24,7 +24,7 @@
                 <ControlTemplate TargetType="Button">
                     <Border x:Name="border"
                             CornerRadius="15"
-                            Background="#8B949E">
+                            Background="Transparent">
                         <ContentPresenter HorizontalAlignment="Center"
                                           VerticalAlignment="Center"/>
                     </Border>
