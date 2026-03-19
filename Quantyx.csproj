@@ -16,6 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="OpenHardwareMonitorLib">
+      <HintPath>..\..\..\..\Downloads\openhardwaremonitor-v0.9.6\OpenHardwareMonitor\OpenHardwareMonitorLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="Assets\close.png" />
     <Resource Include="Assets\minimize.png" />
     <Resource Include="Assets\quantyx.png" />

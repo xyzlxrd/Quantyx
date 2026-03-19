@@ -49,7 +49,7 @@
     <Style x:Key="HomeButtonTheme"
            TargetType="RadioButton"
            BasedOn="{StaticResource RadioBtn}">
-        <Setter Property="Background" Value="#161616"/>
+        <Setter Property="Background" Value="#8461D2"/>
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -57,7 +57,7 @@
                     <Grid x:Name="Root"
                         VerticalAlignment="Stretch"
                         HorizontalAlignment="Stretch"
-                        Background="#171717">
+                        Background="#8461D2">
                         <TextBlock Text="{TemplateBinding Content}"
                                VerticalAlignment="Center"
                                Margin="30,0,0,0"/>
@@ -66,7 +66,7 @@
                         <Trigger Property="IsChecked" Value="True">
                             <Setter TargetName="Root"
                                 Property="Background"
-                                Value="#1C1C1C"/>
+                                Value="#D47E50E4"/>
                         </Trigger>
                     </ControlTemplate.Triggers>
                 </ControlTemplate>

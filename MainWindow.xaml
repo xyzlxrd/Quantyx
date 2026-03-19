@@ -6,7 +6,7 @@
         Background="Transparent"
         AllowsTransparency="True"
         Height="768" Width="1580">
-    <Border Background="#1C1C1C" CornerRadius="20">
+    <Border Background="#0D0D12" CornerRadius="20">
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300"></ColumnDefinition>
@@ -17,7 +17,7 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#171717" CornerRadius="20,0,0,20">
+            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#8461D2" CornerRadius="20,0,0,20">
                 <TextBlock FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Margin="110,15,0,0">QuantyX</TextBlock>
             </Border>
             
@@ -28,12 +28,17 @@
                 <RadioButton FontSize="20" 
                              FontFamily="{StaticResource MainFont}" x:Name="CoreBtn" Foreground="#C1DFFF" Height="60" 
                              Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="CORE" Cursor="Hand" 
-                             Style="{StaticResource HomeButtonTheme}"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="METRICS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PERFORMANCE" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PROCESSES" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="OVERLAY" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="SETTINGS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"></RadioButton>
+                             Style="{StaticResource HomeButtonTheme}" Click="OpenCorePage"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="METRICS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             Click="OpenMetricsPage"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PERFORMANCE" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             Click="OpenPerformancePage"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PROCESSES" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             Click="OpenProcessesPage"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="OVERLAY" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             Click="OpenOverlayPage"></RadioButton>
+                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="SETTINGS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             Click="OpenSettingsPage"></RadioButton>
             </StackPanel>
             
             <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
@@ -44,31 +49,12 @@
                     <Image Source= "/Assets/close.png"/>
                 </Button>
             </StackPanel>
-
-                <Border Grid.Row="1" Grid.Column="1">
-                <Grid Margin="50,0,50,50">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition></ColumnDefinition>
-                        <ColumnDefinition></ColumnDefinition>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition></RowDefinition>
-                        <RowDefinition></RowDefinition>
-                    </Grid.RowDefinitions>
-                    <Border Grid.Row="0" Grid.Column="0" CornerRadius="15" BorderBrush="#555555" BorderThickness="0.5" Margin="10">
-                        <TextBlock Margin="25" FontSize="40" Foreground="white">CPU</TextBlock>
-                    </Border>
-                    <Border Grid.Row="0" Grid.Column="1" CornerRadius="15" BorderBrush="#555555" BorderThickness="0.5" Margin="10">
-                        <TextBlock Margin="25" FontSize="40" Foreground="white">RAM</TextBlock>
-                    </Border>
-                    <Border Grid.Row="1" Grid.Column="0" CornerRadius="15" BorderBrush="#555555" BorderThickness="0.5" Margin="10">
-                        <TextBlock Margin="25" FontSize="40" Foreground="white">GPU</TextBlock>
-                    </Border>
-                    <Border Grid.Row="1" Grid.Column="1" CornerRadius="15" BorderBrush="#555555" BorderThickness="0.5" Margin="10">
-                        <TextBlock Margin="25" FontSize="40" Foreground="white">Gráfico</TextBlock>
-                    </Border>
-                </Grid>
-            </Border>
+			
+			<Grid Grid.Column="1" Grid.Row="1" Background="Transparent">
+				<ContentControl x:Name="MainContent">
+				</ContentControl>
+			</Grid>
+			
         </Grid>
     </Border>
 </Window>
