@@ -1,6 +1,8 @@
-﻿using System.Windows;
-using System.Windows.Input;
+﻿using LibreHardwareMonitor.Hardware;
+using Quantyx.Services;
 using Quantyx.Views;
+using System.Windows;
+using System.Windows.Input;
 
 namespace Quantyx {
     public partial class MainWindow : Window {

@@ -17,16 +17,16 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
             <Border Grid.Row= "0" Grid.Column= "0" CornerRadius= "15" BorderBrush= "#555555" BorderThickness= "0.5" Margin= "10">
-                <TextBlock Margin= "25" FontSize= "40" Foreground= "white"> CPU</TextBlock>
+                <TextBlock x:Name="CPUText" Margin= "25" FontSize= "20" Foreground= "white"></TextBlock>
             </Border>
             <Border Grid.Row= "0" Grid.Column= "1" CornerRadius= "15" BorderBrush= "#555555" BorderThickness= "0.5" Margin= "10">
-                <TextBlock Margin= "25" FontSize= "40" Foreground= "white"> RAM</TextBlock>
+                <TextBlock x:Name="RAMText" Margin= "25" FontSize= "20" Foreground= "white"></TextBlock>
             </Border>
             <Border Grid.Row= "1" Grid.Column= "0" CornerRadius= "15" BorderBrush= "#555555" BorderThickness= "0.5" Margin= "10">
-                <TextBlock Margin= "25" FontSize= "40" Foreground= "white"> GPU</TextBlock>
+                <TextBlock x:Name="GPUText" Margin= "25" FontSize= "20" Foreground= "white"></TextBlock>
             </Border>
             <Border Grid.Row= "1" Grid.Column= "1" CornerRadius= "15" BorderBrush= "#555555" BorderThickness= "0.5" Margin= "10">
-                <TextBlock Margin= "25" FontSize= "40" Foreground= "white"> MEM</TextBlock>
+                <TextBlock x:Name="MEMText" Margin= "25" FontSize= "20" Foreground= "white"></TextBlock>
             </Border>
         </Grid >
     </Border >
