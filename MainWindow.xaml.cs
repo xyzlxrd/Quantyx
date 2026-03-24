@@ -8,8 +8,8 @@ namespace Quantyx {
     public partial class MainWindow : Window {
         public MainWindow() {
             InitializeComponent();
-            CoreBtn.IsChecked = true;
-            MainContent.Content = new CorePageView();
+            HomeBtn.IsChecked = true;
+            MainContent.Content = new HomePageView();
         }
 
         private void BtnClose_Button(object sender, RoutedEventArgs e)
@@ -23,6 +23,10 @@ namespace Quantyx {
 
         private void TitleBar_MouseLeftButtonDown(object sender, MouseButtonEventArgs e) {
             this.DragMove();
+        }
+
+        private void OpenHomePage(object sender,RoutedEventArgs e) {
+            MainContent.Content = new HomePageView();
         }
 
         private void OpenCorePage(object sender, RoutedEventArgs e)

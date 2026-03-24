@@ -17,44 +17,86 @@
                 <RowDefinition></RowDefinition>
             </Grid.RowDefinitions>
 
-            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#8461D2" CornerRadius="20,0,0,20">
+            <Border Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" Background="#D47E50E4" CornerRadius="20,0,0,20">
                 <TextBlock FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Margin="110,15,0,0">QuantyX</TextBlock>
             </Border>
             
             <Border Grid.Row="0" MouseLeftButtonDown="TitleBar_MouseLeftButtonDown" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="20,20,0,0" Background="Transparent">
             </Border>
-            
+
             <StackPanel Grid.Row="1">
+                <RadioButton FontSize="20"
+                             FontFamily="{StaticResource MainFont}" 
+                             x:Name="HomeBtn" 
+                             Foreground="#C1DFFF" 
+                             Height="60" 
+                             Content="HOME" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}" 
+                             Click="OpenHomePage"></RadioButton>
                 <RadioButton FontSize="20" 
-                             FontFamily="{StaticResource MainFont}" x:Name="CoreBtn" Foreground="#C1DFFF" Height="60" 
-                             Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="CORE" Cursor="Hand" 
-                             Style="{StaticResource HomeButtonTheme}" Click="OpenCorePage"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="METRICS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#C1DFFF" 
+                             Height="60" 
+                             Content="CORE" 
+                             Cursor="Hand"
+                             Style="{StaticResource HomeButtonTheme}" 
+                             Click="OpenCorePage"></RadioButton>
+                <RadioButton FontSize="20" 
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#D0E6FD" 
+                             Height="60"
+                             Content="METRICS" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}" 
                              Click="OpenMetricsPage"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PERFORMANCE" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                <RadioButton FontSize="20" 
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#D0E6FD" 
+                             Height="60"
+                             Content="PERFORMANCE" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}"
                              Click="OpenPerformancePage"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="PROCESSES" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                <RadioButton FontSize="20" 
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#D0E6FD" 
+                             Height="60" 
+                             Content="PROCESSES" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}"
                              Click="OpenProcessesPage"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="OVERLAY" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                <RadioButton FontSize="20" 
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#D0E6FD" 
+                             Height="60"
+                             Content="OVERLAY" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}"
                              Click="OpenOverlayPage"></RadioButton>
-                <RadioButton FontSize="20" FontFamily="{StaticResource MainFont}" Foreground="#D0E6FD" Height="60" Margin="30,0,0,0" HorizontalAlignment="Stretch" VerticalContentAlignment="Center" Content="SETTINGS" Cursor="Hand" Style="{StaticResource HomeButtonTheme}"
+                <RadioButton FontSize="20" 
+                             FontFamily="{StaticResource MainFont}" 
+                             Foreground="#D0E6FD" 
+                             Height="60"
+                             Content="SETTINGS" 
+                             Cursor="Hand" 
+                             Style="{StaticResource HomeButtonTheme}"
                              Click="OpenSettingsPage"></RadioButton>
             </StackPanel>
             
             <StackPanel Grid.Column="1" HorizontalAlignment="Right" Orientation="Horizontal">
-                <Button Width="20" Height="20" Margin="0,17.5,0,15" Style="{StaticResource ButtonMinimize}" Click="BtnMinimize_Button">
+                <Button Width="20" Height="20" Margin="0,16,0,15" Style="{StaticResource ButtonMinimize}" Click="BtnMinimize_Button" Cursor="Hand">
                     <Image Source= "/Assets/minimize.png"/>
                 </Button>
-                <Button Width="15" Height="15" Margin="3,17.5,20,15" Style="{StaticResource ButtonBorder}" Click="BtnClose_Button">
+                <Button Width="17.5" Height="17.5" Margin="3,16,20,15" Style="{StaticResource ButtonBorder}" Click="BtnClose_Button" Cursor="Hand">
                     <Image Source= "/Assets/close.png"/>
                 </Button>
             </StackPanel>
-			
-			<Grid Grid.Column="1" Grid.Row="1" Background="Transparent">
-				<ContentControl x:Name="MainContent">
-				</ContentControl>
-			</Grid>
-			
+            
+            <Grid Grid.Column="1" Grid.Row="1" Background="Transparent">
+                <ContentControl x:Name="MainContent">
+                </ContentControl>
+            </Grid>
         </Grid>
     </Border>
 </Window>
